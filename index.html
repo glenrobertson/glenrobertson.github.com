@@ -1,1 +1,10 @@
-It works!
+<div id="home">
+  <h1>Blog Posts</h1>
+  <p>Welcome to my website. TODO: insert animated gif of a digger here to illustrate that it is under construction.</p>
+  
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
