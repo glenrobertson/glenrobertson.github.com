@@ -19,6 +19,10 @@ a {
     color: #31a355;
     text-decoration: none;
 }
+ul {
+    list-style-position: inside;
+    padding: 0;
+}
 a:hover {
     color: #4BB461;
     text-decoration: none;
@@ -63,7 +67,6 @@ ul#navigation {
     float: right;
     list-style: none;
     margin: 5px 0;
-    padding: 0;
     text-align: right;
 }
 ul#navigation li {
