@@ -3,6 +3,28 @@ body {
     color: #555;
     font-family: sans-serif;
 }
+#wrapper {
+    background: transparent;
+    margin: 10px auto;
+    overflow: hidden;
+    width: 960px;
+}
+#header {
+    overflow: hidden;
+}
+#header h1 {
+    float: left;
+}
+#navigation {
+    display: block;
+    float: right;
+    text-align: right;
+    list-style: none;
+}
+#navigation li {
+    float: left;
+    margin-left: 14px;
+}
 a {
     color: #31a355;
     text-decoration: none;
@@ -35,25 +57,4 @@ td {
 td ul {
     margin: 0;
     padding-left: 15px;
-}
-#wrapper {
-    background: transparent;
-    margin: 0 auto;
-    margin: 10px auto;
-    overflow: hidden;
-    width: 960px;
-}
-#header h1 {
-    float: left;
-}
-#navigation {
-    display: block;
-    float: right;
-    text-align: right;
-    list-style: none;
-    overflow: hidden;
-}
-#navigation li {
-    float: left;
-    margin: 0 7px;
 }
