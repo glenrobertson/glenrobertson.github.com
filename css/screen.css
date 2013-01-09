@@ -58,10 +58,12 @@ td ul {
 }
 #header h1 {
     float: left;
+    margin: 0;
 }
 ul#navigation {
     display: block;
     float: right;
+    margin: 0;
     text-align: right;
 }
 ul#navigation li {
