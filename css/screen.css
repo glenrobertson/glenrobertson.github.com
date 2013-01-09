@@ -10,6 +10,7 @@ body {
     width: 960px;
 }
 #header {
+    margin-bottom: 30px;
     overflow: hidden;
 }
 ul {
@@ -28,14 +29,14 @@ a img {
     vertical-align: baseline;
 }
 h1 {
-    font-size: 1.5em;
+    font-size: 25px;
     float: left;
 }
 h2 {
-    font-size: 1.2em;
+    font-size: 20px;
 }
 h3 {
-    font-size: 1em;
+    font-size: 15px;
     margin: 25px 0px 10px 0px;
 }
 dl {
