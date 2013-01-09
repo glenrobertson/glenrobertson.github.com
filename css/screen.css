@@ -12,18 +12,8 @@ body {
 #header {
     overflow: hidden;
 }
-#header h1 {
-    float: left;
-}
-#navigation {
-    display: block;
-    float: right;
-    text-align: right;
+ul {
     list-style: none;
-}
-#navigation li {
-    float: left;
-    margin-left: 14px;
 }
 a {
     color: #31a355;
@@ -37,8 +27,15 @@ a img {
     border: 0;
     vertical-align: baseline;
 }
+h1 {
+    font-size: 1.5em;
+    float: left;
+}
+h2 {
+    font-size: 1.2em;
+}
 h3 {
-    color: #555;
+    font-size: 1em;
     margin: 25px 0px 10px 0px;
 }
 dl {
@@ -57,4 +54,19 @@ td {
 td ul {
     margin: 0;
     padding-left: 15px;
+}
+#header h1 {
+    float: left;
+}
+ul#navigation {
+    display: block;
+    float: right;
+    text-align: right;
+}
+ul#navigation li {
+    float: left;
+    margin-left: 14px;
+}
+ul.posts > span {
+    color: #999;
 }
