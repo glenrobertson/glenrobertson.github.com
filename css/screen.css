@@ -65,13 +65,13 @@ td ul {
 ul#navigation {
     display: block;
     float: right;
-    margin: 0;
+    margin: 5px 0;
     text-align: right;
 }
 ul#navigation li {
     float: left;
     margin-left: 14px;
 }
-ul.posts > span {
+ul.posts li span {
     color: #999;
 }
