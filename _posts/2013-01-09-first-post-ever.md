@@ -10,16 +10,21 @@ My first blog post is about this website! It is hosted for free on Github Pages 
 
 It is a good way to host your website if you:
 
-* Only need to host static content such as HTML/CSS/images
-* Have basic HTML/CSS and Git knowledge
+* Only need to host static content such as HTML, CSS, images, etc
+* Have basic HTML, CSS and Git knowledge
 * Prefer writing markdown in a text editor over a web-based blog editor
 * Want free backups of your website (using Github)
 
 
 ### Create Github repository
-The first thing you need to do is to set up a repository on github.com (signup for a free account if you haven't already). The repository name needs to be named your username + `.github.com`. For example, my username is `glenrobertson` and my repository name is `glenrobertson.github.com`. This repository is online [here](https://github.com/glenrobertson/glenrobertson.github.com).
+The first thing you need to do is to set up a repository on github.com (signup for a free account if you haven't already). The repository name needs to be named your username + ".github.com". For example, my username is `glenrobertson` and my repository name is `glenrobertson.github.com`. Github refers to this as a [User Page](https://help.github.com/articles/user-organization-and-project-pages).
 
-After you have created the repository, Github Pages will host the static content of your repository on the URL with the same name as your repository name. In my case, I can go to `glenrobertson.github.com` in a browser and Github Pages will serve my `index.html` file if it is present in my repository.
+My repository is online [here](https://github.com/glenrobertson/glenrobertson.github.com).
+
+After you have created the repository, Github Pages will host any static content in your repository at the URL with the same name as your repository name. In my case, I can go to `glenrobertson.github.com` in a browser and Github Pages will serve my `index.html` file if it is present in my repository.
 
 
 ### Add basic site layout
+At this point, you have a static website hosted at: your username + ".github.com". In addition, it would be useful to have some basic templating features to avoid repeating HTML across your pages, and the ability to write your blog posts in markdown instead of HTML. This is where [Jekyll](http://jekyllrb.com/) comes in.
+
+Jekyll is a static site generator. The input to Jekyll is a directory of files with some configuration files and file naming conventions, and the output is HTML. When you push your repository to Github, it will check to see if there is a Jekyll configuration, and if so, it will run Jekyll on the directory. Then the outputted HTML will be served on your username + ".github.com" URL, in addition to other static files.
