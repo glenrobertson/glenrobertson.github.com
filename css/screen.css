@@ -3,35 +3,6 @@ body {
     color: #555;
     font-family: sans-serif;
 }
-div#wrapper {
-    background: transparent;
-    margin: 0 auto;
-    margin: 10px auto;
-    overflow: hidden;
-    width: 960px;
-}
-div#content {
-    background: white;
-    float: left;
-    width:100%;
-}
-ul#navigation {
-    background: #D8D8D8;
-    border-radius: 5px;
-    clear: both;
-    display: block;
-    margin: 0px 0 25px 0;
-    padding: 10px;
-    list-style: none;
-    overflow: hidden;
-}
-ul#navigation li {
-    float: left;
-    margin-right: 15px;
-}
-ul#navigation li.right {
-    float: right;
-}
 a {
     color: #31a355;
     text-decoration: none;
@@ -65,7 +36,24 @@ td ul {
     margin: 0;
     padding-left: 15px;
 }
-.tool img {
+#wrapper {
+    background: transparent;
+    margin: 0 auto;
+    margin: 10px auto;
+    overflow: hidden;
+    width: 960px;
+}
+#header h1 {
     float: left;
-    padding: 0px 10px 10px 0px;
+}
+#navigation {
+    display: block;
+    float: right;
+    text-align: right;
+    list-style: none;
+    overflow: hidden;
+}
+#navigation li {
+    float: left;
+    margin: 0 7px;
 }
