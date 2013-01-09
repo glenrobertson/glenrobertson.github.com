@@ -1,0 +1,71 @@
+body {
+    background: url('/images/white_texture.png') repeat;
+    color: #555;
+    font-family: sans-serif;
+}
+div#wrapper {
+    background: transparent;
+    margin: 0 auto;
+    margin: 10px auto;
+    overflow: hidden;
+    width: 960px;
+}
+div#content {
+    background: white;
+    float: left;
+    width:100%;
+}
+ul#navigation {
+    background: #D8D8D8;
+    border-radius: 5px;
+    clear: both;
+    display: block;
+    margin: 0px 0 25px 0;
+    padding: 10px;
+    list-style: none;
+    overflow: hidden;
+}
+ul#navigation li {
+    float: left;
+    margin-right: 15px;
+}
+ul#navigation li.right {
+    float: right;
+}
+a {
+    color: #31a355;
+    text-decoration: none;
+}
+a:hover {
+    color: #4BB461;
+    text-decoration: none;
+}
+a img {
+    border: 0;
+    vertical-align: baseline;
+}
+h3 {
+    color: #555;
+    margin: 25px 0px 10px 0px;
+}
+dl {
+    margin-top: 5px;
+}
+dt {
+    font-style: italic;
+}
+tr.separator {
+    border-bottom: 1px solid #CCC;
+}
+td {
+    vertical-align: top;
+    padding-right: 10px;
+}
+td ul {
+    margin: 0;
+    padding-left: 15px;
+}
+.tool img {
+    float: left;
+    padding: 0px 10px 10px 0px;
+}

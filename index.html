@@ -1,15 +1,11 @@
 ---
 layout: default
-title: Glen Robertson
+title: Home
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <p>Welcome to my website. TODO: insert animated gif of a digger here to illustrate that it is under construction.</p>
-  
-  <ul class="posts">
+<p>Software engineer from New Zealand.</p>
+<ul class="posts">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
-  </ul>
-</div>
+</ul>
