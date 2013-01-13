@@ -8,6 +8,7 @@ My first post is about how I set up my blog: it is hosted for free on Github and
 ![Yo dawg, I heard you like blogs, so I blogged about how to set up a blog so you can blog while you blog](/images/yo-dawg-i-heard-you-like-blogs.jpg)
 
 If you:
+
 * Have basic HTML, CSS and Git knowledge
 * Prefer writing blog posts in markdown in a text editor over a web-based blog editor
 * Only need to host static content such as HTML, CSS, images, etc
