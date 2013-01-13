@@ -1,6 +1,6 @@
 ---
 layout: page
-title: How to host a static site for free using Github Pages and Jekyll
+title: How to host a blog for free using Github Pages and Jekyll
 ---
 
 My first post is about how I set up my blog: it is hosted for free on Github and consists entirely of static files.
