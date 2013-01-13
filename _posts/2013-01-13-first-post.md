@@ -84,7 +84,7 @@ Add the following content to `_layouts/default.html`:
     </html>
     {% endraw %}
 
-The placeholder (`{{ content }}`) will inject the content of a page that is useing the layout.
+The placeholder {% raw %}(`{{ content }}`){% endraw %} will inject the content of a page that is using the layout.
 
 
 Add the following content to `_layouts/page.html`:
