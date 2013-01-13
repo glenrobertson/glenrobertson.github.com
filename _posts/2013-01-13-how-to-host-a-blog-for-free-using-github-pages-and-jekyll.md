@@ -59,7 +59,7 @@ Add the following content to `_config.yml`:
     markdown: rdiscount
     pygments: true
 
-It tells Jekyll to use rdiscount as the Markdown converted, and to use pygments for syntax highlighting.
+It tells Jekyll to use rdiscount as the Markdown converter, and to use pygments for syntax highlighting.
 
 #### Layouts
 The `_layouts` directory is a Jekyll convention. Any files in here contain HTML that you want to reuse across your pages.
