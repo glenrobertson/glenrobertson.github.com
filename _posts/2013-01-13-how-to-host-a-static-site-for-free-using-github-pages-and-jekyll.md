@@ -136,7 +136,7 @@ Add the following to `index.html`:
 The page uses the `default` layout. The is some layout syntax to list each blog post by date, and a link to them.
 
 
-#### Test site with the jekyll --server
+#### Test site with local jekyll server
 You should now have a basic site set up with a single blog post. You can test the site by using the Jekyll server, before pushing the code up to Github.
 
 First, install jekyll and rdiscount:
