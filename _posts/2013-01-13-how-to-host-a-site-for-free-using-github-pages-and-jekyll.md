@@ -1,6 +1,6 @@
 ---
 layout: page
-title: How I host this site for free using Github Pages and Jekyll
+title: How to host a site for free using Github Pages and Jekyll
 ---
 
 
@@ -104,7 +104,7 @@ The `page` layout extends the `default.html` layout, with an added h2 element fo
 
 #### Posts
 The `_posts` directory contains blog posts written in Markdown. They are named by date + the title of the blog. The date can be read by Jekyll, and can be used when listing the blog posts.
-Create a markdown file called `year-month-day-post-title.md` (e.g. `2013-01-13-first-post.md`). The post title in the filename is just to keep the filename unique. Add the following content to the file:
+Create a markdown file called `year-month-day-post-title.md` (e.g. `2013-01-13-first-post.md`). The name of the file makes up the URL path to the post. Add the following content to the file:
 
     ---
     layout: page
