@@ -1,20 +1,19 @@
 ---
 layout: page
-title: How to host a site for free using Github Pages and Jekyll
+title: How to host a static site for free using Github Pages and Jekyll
 ---
 
-
-My first post is meta because it is about this website. It is hosted for free on Github Pages and consists entirely of static files.
+My first post is about how I set up my blog: it is hosted for free on Github and consists entirely of static files.
 
 ![Yo dawg, I heard you like blogs, so I blogged about how to set up a blog so you can blog while you blog](/images/yo-dawg-i-heard-you-like-blogs.jpg)
 
-It is a good way to host your website if you:
-
+If you:
 * Have basic HTML, CSS and Git knowledge
 * Prefer writing blog posts in markdown in a text editor over a web-based blog editor
 * Only need to host static content such as HTML, CSS, images, etc
 * Want free backups of your website (using Github)
 
+... then you should host your website using Github Pages. The rest of the post will tell you how to set it up.
 
 ### Set up github repository
 Sign up or log in to github.com, and create a repository with the name being: your username + ".github.com". For example, my username is `glenrobertson` so I created a repository called `glenrobertson.github.com` ([here](https://github.com/glenrobertson/glenrobertson.github.com)).
