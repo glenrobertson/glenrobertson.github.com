@@ -11,13 +11,13 @@ My first post is meta because it is about this website. It is hosted for free on
 It is a good way to host your website if you:
 
 * Have basic HTML, CSS and Git knowledge
-* Prefer writing markdown in a text editor over a web-based blog editor
+* Prefer writing blog posts in markdown in a text editor over a web-based blog editor
 * Only need to host static content such as HTML, CSS, images, etc
 * Want free backups of your website (using Github)
 
 
 ### Set up github repository
-Sign up or log in to github.com, and create a repository with the name being: your username + ".github.com". For example, my username is `glenrobertson` so I created a repository called `glenrobertson.github.com` ([Here](https://github.com/glenrobertson/glenrobertson.github.com)).
+Sign up or log in to github.com, and create a repository with the name being: your username + ".github.com". For example, my username is `glenrobertson` so I created a repository called `glenrobertson.github.com` ([here](https://github.com/glenrobertson/glenrobertson.github.com)).
 
 ### Test your site
 Add an `index.html` file to the root of your repository and push it (replace USERNAME in the following code with your username).
