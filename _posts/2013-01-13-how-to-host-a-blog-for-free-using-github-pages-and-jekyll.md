@@ -14,12 +14,11 @@ If you:
 * Only need to host static content such as HTML, CSS, images, etc
 * Want free backups of your website (using Github)
 
-... then you should host your website using Github Pages. The rest of the post will tell you how to set it up.
+Then you should host your website using [Github Pages](http://pages.github.com/). The rest of the post will tell you how to set it up.
 
 ### Set up github repository
 Sign up or log in to github.com, and create a repository with the name being: your username + ".github.com". For example, my username is `glenrobertson` so I created a repository called `glenrobertson.github.com` ([here](https://github.com/glenrobertson/glenrobertson.github.com)).
 
-### Test your site
 Add an `index.html` file to the root of your repository and push it (replace USERNAME in the following code with your username).
 
     git clone https://github.com/USERNAME/USERNAME.github.com
@@ -33,33 +32,19 @@ Add an `index.html` file to the root of your repository and push it (replace USE
 At this point, you should be able to see your site at: http://USERNAME.github.com
 
 ### Add basic site layout
-Github Pages uses a static site generator called [Jekyll](http://jekyllrb.com/). Using Jekyll's features, layouts can be used to avoid repeating HTML, and write blog posts in Markdown (which Jekyll converts to HTML). When the codebase contains a Jekyll configuration and is pushed to Github, Github will run Jekyll over the codebase and generate a directory of static files to host.
+Github Pages uses a static site generator called [Jekyll](http://jekyllrb.com/). Using Jekyll's features, layouts can be used to avoid repeating HTML, and write blog posts in Markdown (which Jekyll converts to HTML). When the codebase contains a Jekyll configuration and is pushed to Github, Github will run Jekyll over the codebase and generate a directory of static files to host. Files and directories that begin with an underscore will be processed by Jekyll, all other files will be hosted as regular static files.
 
 Create the following directory structure in your repository:
 
-    config.yml
+    _config.yml
     _layouts/
         default.html
         page.html
     _posts/
-        2013-01-13-first-post.html
+        2013-01-13-first-post.md
     css/
         screen.css
     index.html
-
-`_layouts/` contains files with HTML code that you want to reuse across your pages and blog posts.
-`_posts/` contains files of your blog posts in Markdown.
-`css/` is a directory to serve static files.
-`index.html` is the root file of your site.
-`config.yml` is the Jekyll configuration.
-
-#### Configuration
-Add the following content to `_config.yml`:
-
-    markdown: rdiscount
-    pygments: true
-
-It tells Jekyll to use rdiscount as the Markdown converter, and to use pygments for syntax highlighting.
 
 #### Layouts
 The `_layouts` directory is a Jekyll convention. Any files in here contain HTML that you want to reuse across your pages.
@@ -84,7 +69,7 @@ Add the following content to `_layouts/default.html`:
     </html>
     {% endraw %}
 
-The placeholder {% raw %}(`{{ content }}`){% endraw %} will inject the content of a page that is using the layout.
+The placeholder {% raw %}`{{ content }}`{% endraw %} will inject the content of a page that is using the layout.
 
 
 Add the following content to `_layouts/page.html`:
@@ -133,10 +118,10 @@ Add the following to `index.html`:
     </ul>
     {% endraw %}
 
-The page uses the `default` layout. The is some layout syntax to list each blog post by date, and a link to them.
+The page uses the `default` layout. Each blog post is listed by date with a link to it.
 
 
-#### Test site with local jekyll server
+### Test site with local jekyll server
 You should now have a basic site set up with a single blog post. You can test the site by using the Jekyll server, before pushing the code up to Github.
 
 First, install jekyll and rdiscount:
@@ -147,15 +132,13 @@ Now, run the jekyll server:
 
     jekyll --server --auto
 
-This will start the jekyll server in auto mode, which will restart the server when any files are modified. It should be running on port 4000. Go to [http://localhost:4000](http://localhost:4000) in your browser.
+This will start the jekyll server in auto mode, which will restart the server when any files are modified. It should be running on port 4000. [http://localhost:4000](http://localhost:4000) in your browser.
 
 
 ### Push it to Github
-Once you have finished, run `git push origin master` to push your site to Github. You should then be able to view your site at http://USERNAME.github.com.
+When you are ready to publish your site on Github, commit everything and push to master. You should then be able to view your site at http://USERNAME.github.com. The complete example can be downloaded [here](/files/jekyll-example.zip).
 
-If you run into any problems, have a look at [my repository](https://github.com/glenrobertson/glenrobertson.github.com).
-
-Now that your site is live, you may want to point your personal domain at USERNAME.github.com. This can be done by adding a `CNAME` record to your domain's zone file. To learn how to do this, follow the guide here: [setting up a custom domain with Github Pages](https://help.github.com/articles/setting-up-a-custom-domain-with-pages). 
+If you have a personal domain, you may want to point it at http://USERNAME.github.com. This can be done by adding a `CNAME` record to your domain's zone file. To learn how to do this, follow the guide here: [setting up a custom domain with Github Pages](https://help.github.com/articles/setting-up-a-custom-domain-with-pages). 
 
 Thanks to [Tom Preston-Werner](https://github.com/mojombo) for creating Jekyll, and his basic repository layout ([here](https://github.com/mojombo/mojombo.github.com)).
 
