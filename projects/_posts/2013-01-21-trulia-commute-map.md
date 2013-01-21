@@ -7,7 +7,7 @@ description: An interactive visualisation of commute times to help home buyers d
 ---
 
 
-The Trulia Commute Map is an interactive map that helps home-buyers to find areas to live which are nearby to their workplace.
+The Trulia Commute Map is an interactive map on [Trulia Local](http://www.trulia.com/local) that helps home-buyers to find areas to live which are nearby to their workplace.
 
 ![Commute times for New York City](/images/trulia-new-york-commute.png "Commute times for New York City")
 
