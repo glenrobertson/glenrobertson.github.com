@@ -132,10 +132,11 @@ ul.summary li {
     border-bottom: 1px solid #CCC;
     display: block;
     overflow: hidden;
+    padding-bottom: 3px;
     margin: 5px 0 15px 0;
 }
 ul.summary h3 {
-    margin: 10px 0 2px 0;
+    margin: 10px 0 5px 0;
 }
 ul.summary img {
     margin: 0;
