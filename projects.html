@@ -1,0 +1,19 @@
+---
+layout: page
+title: Projects
+---
+
+<ul id="projects" class="summary">
+    {% for project in site.categories.projects %}
+    <li>
+        <a href="{{ project.url }}"><h3>{{ project.title }} {{ loop.index }}</h3></a>
+        <div class="thumbnail">
+            <a href="{{ project.url }}">
+                <img src="{{ project.thumbnail }}" alt="{{ project.thumbnail_description }}" />
+            </a>
+        </div>
+        <p>{{ project.description }}</p>
+        <p><a href="{{ project.url }}">Read more...</a></p>
+    </li>
+    {% endfor %}
+</ul>

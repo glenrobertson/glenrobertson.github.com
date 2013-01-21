@@ -20,6 +20,9 @@ a {
     text-decoration: none;
 }
 p {
+    color: #666;
+    font-size: 14px;
+    line-height: 20px;
     margin: 0 0 15px 0;
 }
 ul {
@@ -45,7 +48,7 @@ pre code {
 }
 a:hover {
     color: #4BB461;
-    text-decoration: none;
+    text-decoration: underline;
 }
 a img {
     border: 0;
@@ -59,11 +62,11 @@ h2 {
     margin: 0 0 20px 0;
 }
 h3 {
-    font-size: 20px;
-    margin: 30px 0 3px 0;
+    font-size: 16px;
+    margin: 35px 0 5px 0;
 }
 h4 {
-    font-size: 16px;
+    font-size: 14px;
     margin: 20px 0 5px 0;
 }
 dl {
@@ -87,6 +90,9 @@ td ul {
     float: left;
     margin: 0;
 }
+ul {
+    margin: 0 0 50px 0;
+}
 ul#navigation {
     display: block;
     float: right;
@@ -98,13 +104,49 @@ ul#navigation li {
     float: left;
     margin-left: 14px;
 }
-ul.posts {
-    list-style: none;
+#posts {
+    padding: 0 10px;
 }
-ul.posts li span {
+#posts li span {
     color: #999;
 }
 #profile {
     float: right;
     margin: 0;
+}
+
+ul.thumbnails li {
+    float: left;
+    list-style: none;
+    margin: 0 10px;
+    width: 300px;   
+}
+ul.thumbnails img {
+    margin: 0;
+}
+ul.thumbnails h3 {
+    margin: 0 0 25px 0;
+    text-align: center;
+}
+ul.summary li {
+    border-bottom: 1px solid #CCC;
+    display: block;
+    overflow: hidden;
+    margin: 5px 0 15px 0;
+}
+ul.summary h3 {
+    margin: 10px 0 2px 0;
+}
+ul.summary img {
+    margin: 0;
+}
+.summary div {
+    float: left;
+}
+.summary .thumbnail {
+    width: 300px;
+}
+.summary p {
+    float: right;
+    width: 640px;
 }
