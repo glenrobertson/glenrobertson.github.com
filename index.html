@@ -3,19 +3,23 @@ layout: default
 title: Home
 ---
 
-<h2>Recent posts</h2>
-<ul id="posts">
-    {% for post in site.categories.blog %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-</ul>
+<div class="summary">
+    <h2>Recent posts</h2>
+    <ul id="posts">
+        {% for post in site.categories.blog %}
+        <li><span class="post_date">{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
 
-<h2>Recent projects</h2>
-<ul id="projects" class="thumbnails">
-    {% for project in site.categories.projects %}
-    <li>
-        <a href="{{ project.url }}"><img src="{{ project.thumbnail }}" alt="{{ project.thumbnail_description }}" /><a>
-        <a href="{{ project.url }}"><h3>{{ project.title }}</h3></a>
-    </li>
-    {% endfor %}
-</ul>
+<div class="summary thumbnails">
+    <h2>Recent projects</h2>
+    <ul id="projects">
+        {% for project in site.categories.projects %}
+        <li>
+            <a href="{{ project.url }}"><img src="{{ project.thumbnail }}" alt="{{ project.thumbnail_description }}" /><a>
+            <a href="{{ project.url }}"><h3>{{ project.title }}</h3></a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

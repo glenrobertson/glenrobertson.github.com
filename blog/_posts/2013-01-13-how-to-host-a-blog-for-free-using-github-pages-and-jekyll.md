@@ -3,7 +3,7 @@ layout: page
 title: How to host a blog for free using Github Pages and Jekyll
 ---
 
-My first post is about how I set up my blog: it is hosted for free on Github and consists entirely of static files.
+My first post is about how I set up my blog\: it is hosted for free on Github and consists entirely of static files.
 
 ![Yo dawg, I heard you like blogs, so I blogged about how to set up a blog so you can blog while you blog](/images/yo-dawg-i-heard-you-like-blogs.jpg)
 
@@ -141,5 +141,3 @@ When you are ready to publish your site on Github, commit everything and push to
 If you have a personal domain, you may want to point it at http://USERNAME.github.com. This can be done by adding a `CNAME` record to your domain's zone file. To learn how to do this, follow the guide here: [setting up a custom domain with Github Pages](https://help.github.com/articles/setting-up-a-custom-domain-with-pages). 
 
 Thanks to [Tom Preston-Werner](https://github.com/mojombo) for creating Jekyll, and his basic repository layout ([here](https://github.com/mojombo/mojombo.github.com)).
-
-
