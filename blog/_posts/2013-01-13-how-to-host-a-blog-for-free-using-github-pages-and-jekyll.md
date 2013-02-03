@@ -26,10 +26,9 @@ Add an `index.html` file to the root of your repository and push it (replace USE
     echo 'Hello world' > index.html
     git add index.html
     git commit -m "First commit"
-    git remote set-url origin git@github.com:USERNAME/USERNAME.github.com
     git push origin master
 
-At this point, you should be able to see your site at: http://USERNAME.github.com
+At this point, Github.com will be building your site to prepare to be hosted. After about 10 minutes, you should be able to see your site at: http://USERNAME.github.com
 
 ### Add basic site layout
 Github Pages uses a static site generator called [Jekyll](http://jekyllrb.com/). Using Jekyll's features, layouts can be used to avoid repeating HTML, and write blog posts in Markdown (which Jekyll converts to HTML). When the codebase contains a Jekyll configuration and is pushed to Github, Github will run Jekyll over the codebase and generate a directory of static files to host. Files and directories that begin with an underscore will be processed by Jekyll, all other files will be hosted as regular static files.
