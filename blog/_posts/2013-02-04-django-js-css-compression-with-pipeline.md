@@ -10,7 +10,7 @@ It integrates with Django awesomely, by:
 * Providing a template tag to point to the minified file paths
 * Making nice use of the `DEBUG` setting to decide whether to load the source or compressed files
 
-This post explain how to set up [`django-pipeline`](https://github.com/cyberdelia/django-pipeline) along with [`mincss`](https://mincss.readthedocs.org/en/latest/) and [`slimit`](http://pypi.python.org/pypi/slimit) for CSS and Javascript minification, as part of your deployment process.
+This post explain how to set up [`django-pipeline`](https://github.com/cyberdelia/django-pipeline) along with [`mincss`](https://mincss.readthedocs.org/en/latest/) and [`slimit`](http://pypi.python.org/pypi/slimit) for CSS and Javascript compression, as part of your deployment process.
 
 It is assumed that you already have a `requirements.txt` in your Django project, and `./manage.py collectstatic` is part of your deploy script.
 
@@ -27,7 +27,7 @@ Then re-run `pip install -r requirements.txt`
 
 
 ### Configure your settings.py
-There are three main things you need to add to your `settings.py`. These are:
+There are three main changes you need to make to your `settings.py` to get `django-pipeline` running. These are:
 
 1. Change the `staticfiles` app's file storage engine to `pipeline.storage.PipelineStorage`:
 1. Tell `pipeline` to use `cssmin` and `slimit` as the minification engines:
