@@ -30,9 +30,9 @@ Then re-run `pip install -r requirements.txt`
 There are a few changes you need to make to your `settings.py` to get `django-pipeline` running. These are:
 
 1. Add `pipeline` to the installed apps
-1. Change the `staticfiles` app's file storage engine to `pipeline.storage.PipelineStorage`:
-1. Tell `pipeline` to use `cssmin` and `slimit` as the minification engines:
-1. Tell `pipeline` where your css/js files are located:
+1. Change the `staticfiles` app's file storage engine to `pipeline.storage.PipelineStorage`
+1. Tell `pipeline` to use `cssmin` and `slimit` as the minification engines
+1. Tell `pipeline` where your css/js files are located
 
 Here is an example configuration:
 
@@ -73,7 +73,7 @@ The basic `PipelineStorage` engine is being used, but pipeline also provides oth
 
 In the `PIPELINE_CSS` and `PIPELINE_JS` dictionaries, we have configurations labelled with `my_app`, that contain the Twitter bootstrap library, JQuery, along with custom CSS in the `css/` directory and a custom Javascript file at `js/app.js`. The order of the entries in `source_filenames` is important if one library depends on another library.
 
-The setting `'variant':'datauri'` inside `PIPELINE_CSS['my_app']` will tell `django-pipeline` to embed fonts and images directly inside your compiled CSS. You can read more about that [here](http://django-pipeline.readthedocs.org/en/latest/configuration.html#embedding-fonts-and-images)
+The setting `'variant':'datauri'` inside `PIPELINE_CSS['my_app']` will tell `django-pipeline` to embed fonts and images directly inside your compiled CSS. You can read more about that [here](http://django-pipeline.readthedocs.org/en/latest/configuration.html#embedding-fonts-and-images).
 
 
 Change the lines in `source_filenames` of the `PIPELINE_CSS` and `PIPELINE_JS` dictionaries to point to CSS/JS files in your Django applications static directory. After you have done that, you should be able to run `./manage.py collectstatic`, which will generate `min.css` and `min.js` files in your `STATIC_ROOT` directory.
@@ -94,4 +94,4 @@ The source files will be loaded if `DEBUG = True`, or the compressed files will 
 ### Done!
 Now your project will be able to serve up compressed JS and CSS files in production, while allowing you to work on the source files in development. I would recommend downloading all your third party libraries as source files in case you need to edit them easily.
 
-`django-pipeline` is a popular library that is being actively developed as of early 2013. It has a lot of other awesome features that I haven't explored yet, such as compilers for Coffeescript, LESS, SASS, etc, as well as compression libraries in addition to `mincss` and `slimit`. Note that I chose to go with `mincss` and `slimit` for ease of installation via `pip`.
+`django-pipeline` is a popular library that is being actively developed as of early 2013. It has a lot of other awesome features that I haven't explored yet, such as compilers for Coffeescript, LESS, SASS, etc, as well as compression libraries in addition to `cssmin` and `slimit`. Note that I chose to go with `cssmin` and `slimit` for ease of installation via `pip`.
