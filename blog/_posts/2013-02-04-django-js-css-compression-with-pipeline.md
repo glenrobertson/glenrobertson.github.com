@@ -27,13 +27,20 @@ Then re-run `pip install -r requirements.txt`
 
 
 ### Configure your settings.py
-There are three main changes you need to make to your `settings.py` to get `django-pipeline` running. These are:
+There are a few changes you need to make to your `settings.py` to get `django-pipeline` running. These are:
 
+1. Add `pipeline` to the installed apps
 1. Change the `staticfiles` app's file storage engine to `pipeline.storage.PipelineStorage`:
 1. Tell `pipeline` to use `cssmin` and `slimit` as the minification engines:
 1. Tell `pipeline` where your css/js files are located:
 
 Here is an example configuration:
+
+    INSTALLED_APPS = (
+        ...
+        'pipeline',
+        ...
+    )
 
     STATICFILES_STORAGE = 'pipeline.storage.PipelineStorage'
 
