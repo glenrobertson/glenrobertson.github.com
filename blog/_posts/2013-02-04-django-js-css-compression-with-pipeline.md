@@ -89,7 +89,7 @@ Now that the compressed CSS and Javascript files have been generated, you need t
 
 Depending on your `DEBUG` and `PIPELINE` settings, the template tag will either load the compressed files that were generated, or will load all of the original source files. 
 
-The source files will be loaded if `DEBUG = True`, or the compressed files will be loaded if `DEBUG = False`. However, if `DEBUG = True` and `PIPELINE = True`, then the source files will still be loaded.
+If the `PIPELINE` setting is not specified, source files will be loaded when `DEBUG = True`, and compressed files will be loaded when `DEBUG = False`. If `PIPELINE = True`, compressed files will be loaded, or if `PIPELINE = False`, source files will be loaded irrespective of the `DEBUG` setting.
 
 ### Done!
 Now your project will be able to serve up compressed JS and CSS files in production, while allowing you to work on the source files in development. I would recommend downloading all your third party libraries as source files in case you need to edit them easily.
