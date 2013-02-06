@@ -33,6 +33,7 @@ ul {
 }
 img {
     margin: 5px 0;
+    vertical-align: middle;
 }
 pre {
     background: #EEE;
