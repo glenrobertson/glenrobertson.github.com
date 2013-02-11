@@ -16,7 +16,7 @@ The screenshot above is a [crime map of San Francisco](http://www.trulia.com/loc
 ### Data
 We used crime point data from the [CrimeReports](https://www.crimereports.com) and [SpotCrime](http://www.spotcrime.com) APIs and [Census block polygons](http://www.census.gov/cgi-bin/geo/shapefiles2012/main) to group the crime points visually. Crime feeds are downloaded from both APIs, and crime counts are updated per block on a daily basis. Any blocks with counts &gt; 0 are transferred to a smaller table, since a table with 10 million polygons becomes a little slow to query by the API.
 
-The API exposes image tiles dynamically if they are not cached, and a [GeoJSON](http://www.geojson.org) endpoint of recent crime points queryable by [geohash](http://www.geohash.org). This is currently used on [Trulia Local](http://www.trulia.com/local) and the [Trulia iPad App](https://itunes.apple.com/us/app/trulia-real-estate-homes-for/id288487321?mt=8).
+The API generates image tiles dynamically if they are not cached, and a [GeoJSON](http://www.geojson.org) endpoint of recent crime points queryable by [geohash](http://www.geohash.org). This is currently used on [Trulia Local](http://www.trulia.com/local) and the [Trulia iPad App](https://itunes.apple.com/us/app/trulia-real-estate-homes-for/id288487321?mt=8).
 
 ### Visualisation
 The heatmap overlay consists of coloured blocks. A block's colour is determined by the its crime count, which is the number of crimes that occurred within an 0.1 mile radius of the block's centroid. A radius count allows the data to be smoothed across adjacent blocks, as opposed to counting points in each polygon, where the blocks stand out a lot more. The crime count is then normalized between the minimum and maximum crime count values for all blocks within the county.
@@ -24,7 +24,7 @@ The heatmap overlay consists of coloured blocks. A block's colour is determined 
 The colour is then generated with the Hue-Saturation-Lightness (HSL) colour model. The ratio is scaled linearly between green and red HSL tuples. The following Python function calculates a colour from the ratio:
 
 {% highlight py %}
-def get_colour_hsl(ratio):
+def get_colour(ratio):
     """
     Calculate and return an HSL colour tuple, based on a decimal between 0.0 and 1.0
     """
