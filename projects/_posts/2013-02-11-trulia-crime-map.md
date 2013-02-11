@@ -7,7 +7,7 @@ description: A heatmap of crime activity for US cities.
 ---
 
 
-The [Trulia Crime Map](http://www.trulia.com/local#crimes) is a heatmap that visualises high crime areas for US cities. I worked with [Zain Memon](http://inzain.net/) and [Sha Hwang](http://postarchitectural.com) on this project. I focussed on the data import, set up the API, and configured the production servers for this project.
+The [Trulia Crime Map](http://www.trulia.com/local#crimes) is a heatmap that visualises high crime areas for US cities. I worked with [Zain Memon](http://inzain.net/) and [Sha Hwang](http://postarchitectural.com) on this project. I focused on the data import, set up the API, and configured the production servers for this project.
 
 ![Crime map for San Francisco](/images/trulia-san-francisco-crime.png)
 
