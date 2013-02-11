@@ -19,9 +19,9 @@ We used crime point data from the [CrimeReports](https://www.crimereports.com) a
 The API generates image tiles dynamically if they are not cached, and a [GeoJSON](http://www.geojson.org) endpoint of recent crime points queryable by [geohash](http://www.geohash.org). This is currently used on [Trulia Local](http://www.trulia.com/local) and the [Trulia iPad App](https://itunes.apple.com/us/app/trulia-real-estate-homes-for/id288487321?mt=8).
 
 ### Visualisation
-The heatmap overlay consists of coloured blocks. A block's colour is determined by the its crime count, which is the number of crimes that occurred within an 0.1 mile radius of the block's centroid. A radius count allows the data to be smoothed across adjacent blocks, as opposed to counting points in each polygon, where the blocks stand out a lot more. The crime count is then normalized between the minimum and maximum crime count values for all blocks within the county.
+The heatmap overlay consists of coloured blocks. A block's colour is determined by its crime count: the number of crimes that occurred within an 0.1 mile radius of the block's centroid. A radius count allows the data to be smoothed across adjacent blocks, as opposed to counting points in each polygon where the blocks stand out a lot more. The count is then normalized between the minimum and maximum crime count values for all blocks within the county.
 
-The colour is then generated with the Hue-Saturation-Lightness (HSL) colour model. The ratio is scaled linearly between green and red HSL tuples. The following Python function calculates a colour from the ratio:
+The colour is then generated from the ratio with the Hue-Saturation-Lightness (HSL) colour model. The ratio is scaled linearly between green and red HSL tuples. The following Python function calculates a colour given the ratio:
 
 {% highlight py %}
 def get_colour(ratio):
