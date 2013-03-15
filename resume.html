@@ -51,7 +51,12 @@ title: Resume
     <tr>
         <td>Description</td>
         <td>
-            TBA
+            <ul>
+                <li>Currently working on a web-based mapping tool that allows easy importing and visualisation of real-time geographic datasets (csv's, shapefiles, etc) on choropleth maps.</li>
+                <li>The back-end is written in GeoDjango with PostGIS. I wrote a REST API (using django-tastypie) to manage the geographic datasets. I <a href="https://github.com/glenrobertson/django-dynamo.git">extended a library</a> called django-dynamo that allows the ability to generate GeoDjango models at runtime.</a></li>
+                <li>The front-end is written in Backbone.js, Backbone.Marionette.js, Handlebars.js for templating, and Leaflet.js for client-side mapping.</li>
+                <li>I wrote a Django app for serving GeoJSON tiles (<a href="http://pypi.python.org/pypi/django-geojson-tiles/">on PyPI</a>), and a Leaflet.js library to render GeoJSON tiles <a href="https://github.com/glenrobertson/leaflet-tilelayer-geojson">(here)</a>.</li>
+            </ul>
         </td>
     </tr>
     <tr>
