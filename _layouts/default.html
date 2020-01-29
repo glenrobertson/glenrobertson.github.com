@@ -6,12 +6,24 @@
    <meta name="author" content="Glen Robertson" />
    <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
    <link rel="stylesheet" href="/css/pygments.css" type="text/css" media="screen, projection" />
+   <style>
+      blink, .blink {
+          -webkit-animation: blink 1s step-end infinite;
+          -moz-animation: blink 1s step-end infinite;
+          -o-animation: blink 1s step-end infinite;
+          animation: blink 1s step-end infinite;
+      }
+      @-webkit-keyframes blink { 67% { opacity: 0 }}
+      @-moz-keyframes blink {  67% { opacity: 0 }}
+      @-o-keyframes blink {  67% { opacity: 0 }}
+      @keyframes blink {  67% { opacity: 0 }}
+   </style>
 </head>
 <body>
     <div id="wrapper">
         <div id="header">
             <h1><a href="/">Glen Robertson</a></h1>
-            <marquee>Welcome to my website</marquee>
+            <marquee><span class="blink">Welcome to my website</span></marquee>
             <ul id="navigation">
                 <li><a href="/blog.html">Blog</a></li>
                 <li><a href="/projects.html">Projects</a></li>
