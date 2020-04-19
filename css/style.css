@@ -1,0 +1,124 @@
+*:after,*.before{box-sizing:border-box}html,body,div,main,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{box-sizing:border-box;margin:0;padding:0;border:0;outline:0;font-size:100%;font-weight:inherit;font-style:inherit;font-family:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary,main{display:block}*{-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}a{text-decoration:none}body{line-height:1}ol,ul{list-style-type:none}table{border-collapse:collapse;border-spacing:0}caption,th,td{text-align:left;font-weight:400}input,textarea{-webkit-border-radius:0;-moz-border-radius:0}button,input[type="button"]{background:0}:required{-o-box-shadow:none;-ms-box-shadow:none;box-shadow:none}em,i{font-style:italic}strong,b{font-weight:700}u{text-decoration:underline}pre,code{font-family:Monaco,Courier,monospace}pre{white-space:pre;white-space:pre-wrap;white-space:pre-line;word-wrap:break-word}blockquote,q{quotes:"" ""}blockquote:before,blockquote:after{content:""}q:before,q:after{content:""}a{cursor:pointer}input[type="submit"],input[type="button"]{cursor:pointer}button,label[for]{cursor:pointer}img{-ms-interpolation-mode:bicubic}
+
+a, a:active, a:visited {
+	color: rgba(255,255,255, .7);
+	cursor: pointer;
+	text-decoration: underline;
+  	-ms-transition:color .2s ease-out, background 1s ease-in;
+  	-moz-transition:color .2s ease-out, background 1s ease-in;
+  	-webkit-transition:color .2s ease-out, background 1s ease-in;
+  	transition:color .2s ease-out, background 1s ease-in;
+}
+a:hover {color: rgba(255,255,255, 1);}
+
+html, body, main {height: 100%;}
+
+body {
+	color: #fff;
+	font: 400 100% soleil, sans-serif;
+	font-variant-ligatures: common-ligatures;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	text-shadow: 0 2px 4px rgba(76,25,179,0.20);
+	/*Fade in animation*/
+	opacity: 1;
+	transition: 0.4s opacity;
+	transition-delay: .1s;
+	transition-timing-function: ease-in;
+}
+
+div.bg {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	background-image: linear-gradient(134deg, #5840FD 0%, #6201BC 38%, #D101A5 63%, #FF006C 84%);
+	z-index: -2;
+}
+
+/*Fade in animation*/
+body.fade {
+    opacity: 0;
+    transition: none;
+}
+
+.circle {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+main {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 6.5em 7.5em 7.5em 7.5em;
+}
+
+h1 {
+	font-size: 3em;
+	font-weight: 700;
+	max-width: 14.5em; 
+	line-height: 1.4;	
+}
+
+/*hidden until needed by smaller viewports*/
+h1.condensed {display: none;}
+
+ul {
+	margin: 0;
+	padding: 4em 0 0 0;
+}
+ul li {
+	font-size: 1.25em;
+	line-height: 2;
+	font-weight: 700;
+}
+
+@media screen 
+and (min-width: 1700px) {
+	main {padding: 6.5em 8em 8em 8em;}
+	h1 {font-size: 4.5em;}
+	ul li {font-size: 2em;}
+}
+
+@media screen 
+and (min-width: 701px) 
+and (max-width: 880px) {
+	main {padding: 5em 6em 5em 6em;}
+	h1 {font-size: 2.5em;}
+}
+
+@media screen 
+and (min-width: 567px) 
+and (max-width: 700px) {
+	main {padding: 3em 3.5em 3em 3.5em;}
+	.circle svg {width: 170%; height: 170%;}
+	h1 {font-size: 2em;}
+}
+
+@media screen 
+and (min-width: 360px) 
+and (max-width: 566px) {
+	main {padding: 2.5em 3em 2.5em 3em;}
+	.circle svg {width: 170%; height: 170%;}
+	h1 {font-size: 1.54em; line-height: 1.5;}
+	/*hide default h1 and show condensed version*/
+	h1:first-child {display: none;}
+	h1.condensed {display: block;}
+}
+
+@media screen 
+and (min-width: 0px) 
+and (max-width: 359px) {
+	main {padding: 2em 2.5em 2em 2.5em;}
+	.circle svg {width: 170%; height: 170%;}
+	h1 {font-size: 1.54em; line-height: 1.5;}
+	/*hide default h1 and show condensed version*/
+	h1:first-child {display: none;}
+	h1.condensed {display: block;}
+}
