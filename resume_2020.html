@@ -4,8 +4,9 @@ title: Resume
 ---
 
 <p>
-Full-stack software engineer based in Brooklyn, NY.<br />
-I am empathetic, pragmatic and product focused. My goal is to solve problems to help people.</p>
+I am a full-stack software engineer based in Brooklyn, NY.<br />
+I have worked exclusively in iOS for the last 18 months, but prior to that I have worked in back-end roles.
+I am empathetic, pragmatic and product focused. I care about the customer, and I am motivated by solving techical problems to help them.</p>
 
 <h3>Work</h3>
 
@@ -17,8 +18,22 @@ Identity team stuff
 <h4><a href="https://www.lyft.com">Lyft</a> | Server Engineer | California | May 2013 - Dec 2017</h4>
 <p>
 Identity
+
 Enterprise<br>
+<ul>
+    <li>Organizations: implemented Python service and data model to store organizations and employee work emails, as well as a web frontend to allow employers to provide Lyft perks to their employees. These were 1) Credits: configurable by geofence, time window, and amount. 2) Direct billing: a proxy payment method to bill to the employer's account. 3): Offline accounts: this allowed larger companies to accrue charges for a month period, so they could pay using checks.</li>
+    <li>Business profiles: technical lead for lyft.com/business. This involved writing a tech spec, seeking consensus with client engineers, and building the back-end APIs. More than 1.4M Lyft riders have added business profiles.</li>
+    <li>Concierge: built API for web-based tool where organizations could request rides for others. It involved refactoring the ride model to allow separate entities for requester, payer, and rider. This service has processed 37M rides as of today.</li>
+    <li>Starbucks integration: implemented API integration with Starbucks to allow their baristas to sign up with employee IDs and receive subsidized rides to their cafes.</li>
+    <li>Events: mentored summer intern to automate the ability for event planners to create batch Lyft coupons for parties: lyft.com/events. I mentored the intern through designing the API, and helping have discussions with pay and fraud teams. This product handles approximately $200k in event revenue per anually.</li>
+</ul>
+
 Driver onboarding<br>
+<ul>
+    <li>Applicant tracking system for new Lyft drivers: this was the first Lyft microservice: written in Python with Flask, and Angular 3.0, and replaced the existing Salesforce funnel. I built optimizations as we scaled Lyft from four cities to over 100. The system has successfully onboarded more than 4.7M drivers today.</li>
+    <li>Driver heatmaps: I built a back-end image tile service to show drivers in-demand areas to drive to while they were between rides. It ingested geohash data and produced choropleth image tiles. The service was built in 2015 and is still in use today.</li>
+    <li>Mentoring system: As Lyft grew, it became infeasible for account executives to conduct phone screens and in-person interviews for new drivers. I helped implement a message queueing system, which paired top rated drivers with new applicants. The applicant would go for a test drive with the driver. The driver then filled out a checklist to assess the applicant. This enabled Lyft to easily grow into new cities without physical offices.</li>
+</ul>
 </p>
 
 <h4><a href="http://www.datacom.co.nz">Datacom</a> | Senior Software Developer | New Zealand | Jul 2012 - May 2013</h4>
@@ -39,7 +54,7 @@ Managed deployment and environments with Fabric, supervisord, gunicorn, nginx; c
 <h4><a href="http://www.datacom.co.nz">Datacom</a> | Java Developer | New Zealand | Mar 2010 - Jun 2011</h4>
 <p>
 Developed API and web portal for major New Zealand telecommunications company. The API facilitated B2B communication with service companies to schedule fibre optic internet installation across New Zealand. I built this in Java J2EE with Spring Framework and Hibernate on IBM WebSphere and Oracle 11g. I implemented both the back-end and front-end with guidance from a senior architect.<br>
-Developed a heat map web application prototype for Chorus using the Google Maps API V3 for Javascript. A screenshot of a map with dummy test data can be seen <a href="/images/map.png">here</a>. I implemented two overlays: weather data icomns and real-time capacity information on a choropleth layer.<br />
+Developed a heat map web application prototype for Chorus using the Google Maps API V3 for Javascript. A screenshot of a map with dummy test data can be seen <a href="/images/map.png">here</a>. I implemented two overlays: weather data and real-time capacity information on a choropleth layer.<br />
 Set up automated ANT builds and continuous integration using Hudson.<br>
 Configured server clusters in UNIX environment.<br>
 </p>
